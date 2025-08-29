@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('/fonts/AtkinsonHyperlegibleMono.ttf') format('truetype');
+}
+
+html {
+  background-color:#ffffff;
+  font-family: 'Atkinson Hyperlegible Mono';
+  line-height: 1.75;
+}
+
+/* Stop links from changing color */
+a {
+  color: black;
+}
+
+/* Give outline to images */
+img {
+  border: .1rem solid black;
+}
+
+/* Column container */
+.pagerows {  
+  display: flex;
+  justify-content:left;
+  margin: 2%;
+  gap: 3rem;
+}
+
+/* Sidebar/left column */
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  max-width: 25%;
+  border: 0.1rem solid black; 
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+  line-height: 1.25;
+}
+
+/* Style the navigation bar */
+.navbar {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+/* Style the header text */
+.header img{
+  width: 12rem;
+  max-width: 100%;
+  border: 0px;
+  margin-bottom: 1rem;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  width: fit-content;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  color: #8e8e8e;
+}
+
+/* Main column for index page */
+.main {
+  max-width: 60%;
+}
+
+/* Responsive layout for screens under 1000px */
+@media screen and (max-width: 1000px) {
+
+  /* Make the two sections stack on top of each other */
+  .pagerows {   
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  /* Stretch the sidebar across the full screen */
+  .side { 
+    min-width: 100%;
+    align-items: center;
+    padding: .5rem;
+  }
+
+  /* Give the header image some space */
+  .header img {
+    margin-bottom: .25rem;
+  }
+
+  /* Make navigation links appear in a row and center them */
+  .navbar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Stretch the main bar across the full screen and use even padding */
+  .main {  
+    min-width: 100%; 
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+ 
+  /*Change overall text color*/
+  html {
+    background-color:  	#1d1d1d;
+    color: #eeeeee;
+  }
+
+  /* Change header text color */
+  .header {
+    color: #eeeeee;
+  }
+
+  /* Change navbar link text color */
+  .navbar a {
+    color: #eeeeee;
+  }
+
+  /* Change sidebar background color and sidebar border color */
+  .side {
+    border: 0.1rem solid #eeeeee; 
+    background-color: #ffffff10;
+    color: white;
+  }
+
+  /* Change image outline to white */
+  img {
+    border: .1rem solid #eeeeee;
+  }
+
+  /* In general, stop links from changing colors and set to blue */
+  a {
+    color: #809bfb;
+  }
+  
+}

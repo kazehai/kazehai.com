@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/subpage style.css">
+<title>Technical Notes + Breakdown / kazehai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="pagerows">
+
+    <div class="subpageside">
+
+        <h3>Technical Notes + Breakdown</h3>
+        <p>2025-07-20</p>
+        <p>---</p>
+        <p><a href="/text.html">Back to /text/.</a></p>
+        <p>---</p>
+        <p><a href="https://kazehai.itch.io/ten-metre-tide/devlog/989958/technical-notes-breakdown">View the original post on itch.io.</a></p>   
+
+    </div>
+
+    <div class="text">
+
+        <div class="longtext">
+
+            <p>A game jam isn't the time to learn new workflows or pick up new skills, right? Especially when working against a deadline, you have to write what you know... but you also have to photograph what you know, collage what you know, embroider what you know... you know?</p>
+
+            <p>In fact, both of us tried many new things through the production of <i>Ten Metre Tide</i>. Learning Ren'Py, learning to 'speak the language' of visual novels,  and of course, the integrative approach to our constituent art forms and working as a creative duo: that was all new to us. After putting it all together, we've broken it down again. Here are some mostly technical notes on the production of our game.</p>
+        
+            <h3>Photography</h3>
+
+            <p>Photography took place on the first full weekend of the jam. Early on a hazy Saturday morning, we took the Casco Bay Lines ferry out to Peaks Island, an exclave of our home city of Portland. The ride took about twenty minutes and included a good view of Portland's peninsula, Bug Light and Spring Point Ledge in South Portland, plus a fly-by of Fort Gorges, one of the key visuals in the VN. </p>
+
+            <p><a href="/text/images/tnb1.jpg"><img src="/text/images/tnb1.jpg" alt="tnb1" loading="lazy" class="img-orient"></a></p>
+            <i>Fort Gorges from Casco Bay. June 2025.</i>
+
+            <p>Peaks is the major inspiration for the look and design of Fort Colwyn. It's certainly more lush and vibrant than how FC is described, but it's as close as one could imagine FC in the real world. It has a year-round population of just under a thousand, which swells with tourists and seasonal residents in the summer. Commercial activity is more or less limited to a single street near the ferry terminal on the western shore. Residential roads branch out from there, and the landscape becomes progressively woodsier as one moves east. </p>
+
+            <p><a href="/text/images/tnb2.jpg"><img src="/text/images/tnb2.jpg" alt="tnb2" loading="lazy" class="img-orient"></a></p>
+            <i>The bulk of commercial/tourist activity on Peaks takes place between Epps Street and Welch.</i>
+
+            <p>At this point in the development process, we were already settling down on the visual style and even had a partial shot list to work from. Hannigan's Island Market would stand in for Erica's store, the ferry terminal could be FC's breakwater, and there were plenty of natural scenes to shoot in their full splendor – the glorious start of summer in Maine! As we walked around the quiet island, taking photos and chatting about our still-green story, it was easy to forget that this place is technically a part of our own city. </p>
+
+            <p><a href="/text/images/tnb3.jpg"><img src="/text/images/tnb3.jpg" alt="tnb3" loading="lazy" class="img-orient"></a></p>
+            <i>Hannigan's Island Market, Peaks Island, Portland, ME. June 2025.</i>
+
+            <p><a href="/text/images/tnb4.jpg"><img src="/text/images/tnb4.jpg" alt="tnb4" loading="lazy" class="img-orient"></a></p>
+            <i>View of Great Diamond from Peaks. Portland, ME. June 2025.</i>
+
+            <p>A second day of shooting took place the following weekend in South Portland. Several large banks of gas tanks owned by Sunoco, Irving, and Sprauge sit on the waterfront, serviced by trucks, rail, and ships. The tanks themselves and the various pipes and docks served as our Maitlandside backgrounds.</p>
+
+            <p><a href="/text/images/tnb5.jpg"><img src="/text/images/tnb5.jpg" alt="tnb5" loading="lazy" class="img-orient"></a></p>
+            <i>Tanks in South Portland, ME. June 2025.</i>
+
+            <p>A small handful of photos were pulled from my back catalog: off the top of my head, the cemetery background is an image of Schoolmaster Hill in Boston, and the final scene of Jinny's door is an industrial freezer in Sackville, New Brunswick. </p>
+
+            <p><a href="/text/images/tnb6.jpg"><img src="/text/images/tnb6.jpg" alt="tnb6" loading="lazy" class="img-orient"></a></p>
+            <i>Boston, MA. 2023.</i>
+
+            <p>As a primarily black-and-white film photographer, and as one who shoots mostly in 4:5 or in squares, shooting for widescreen and in both color and monochrome was an interesting challenge. I'm mostly happy with how the images turned out, but there were a few that we had to mirror or creatively crop in order to work with the GUI and character sprites. </p>
+
+            <h3>Backgrounds</h3>
+
+            <p>The first step in this process was to edit the (color) images in Lightroom. Next was to print. We printed on an office laserjet, which embedded its own unique look onto the images. I knew from the start that there would be a loss in fine detail and tonality, but the cross-hatching effect was more pronounced than I expected. That's fine; that's cool. But there was also severe banding across every image, probably due to some issue with the print drum. Cleaning the drum improved the issue, but didn't solve it. We ultimately decided to move ahead despite the banding, and I'm glad we did.</p>
+
+            <p><a href="/text/images/tnb7.jpg"><img src="/text/images/tnb7.jpg" alt="tnb7" loading="lazy" class="img-orient"></a></p>
+            <i>Close-up of foliage in a printed background. The dot matrix look is reminiscent of aida cloth.</i>
+
+            <p>Notes from Pilot on making backgrounds:</p>
+
+            <p>Sitting in our closet is a tote bag of collage materials that I've been accumulating for half a decade: stickers, paper, stationery, and miscellaneous. To make the backgrounds, I used:</p>
+
+            <ul>
+                <li>An <i>entire</i> bottle of clear glue </li>
+                <li>About four different magazines, mostly ones about Maine</li>
+                <li>Three children's sticker books (farm animals, colours, and Animal Crossing)</li>
+                <li>Mulberry paper that Kai had gifted me a few birthdays ago </li>
+                <li>Many types of decorative washi tape, using some of the rolls down to the cardboard  </li>
+                <li>Highlighters, sparkle pens, paint markers, and two very abused gel pens  </li>
+                <li>Glitter glue (I'm still finding stray star glitters at my desk) </li>
+                <li>Embroidery thread </li>
+                <li>Countless miscellaneous stickers from various sheets and sources  </li>
+            </ul>
+
+            <p>...And probably some other sorts of recyclable trash. There was plenty of ripping, tearing, cutting, and pasting involved, and throughout it all I was lost in the sauce (glue).</p>
+
+            <p>The washi tape roll that saw the most use was one of the ICS flag alphabet, endlessly repeating. Each time they're seen, I can promise you they have some vague meaning, even if not a meaningful one. Because it's one of my favourite stationery items, I tried to waste as little as possible. This resulted in some weird translations. For example, New Hampshire was abbreviated to HM and Nova Scotia to VS because N flags were too hot of a commodity, and I really didn't want to waste 25 letters to get one more N.</p>
+
+            <p><a href="/text/images/tnb8.jpg"><img src="/text/images/tnb8.jpg" alt="tnb8" loading="lazy" class="img-orient"></a></p>
+            <i>BLOV BYU FRVR: 'Beloved by you forever'</i>
+            
+            <p>Maybe by the next project I'll be brave and attempt to draw backgrounds, relearn perspective, push myself and stuff… Or maybe not. A short jam wasn't the time to get frustrated at an undeveloped skill, so I stuck to what I felt comfortable with and actively enjoyed doing.</p>
+
+            <h3>Embroidery</h3>
+
+            <p>Pilot's notes again:</p>
+
+            <p>From the very, very beginning of our brainstorming I knew I wanted to embroider some part of the game. Embroidered collage of fabric, beads, and found materials is my favourite kind of art to make. I picked up 6 skeins of embroidery floss (red, blue, yellow, super pale blue, slightly pale blue, and a very dark gray blue; I'm allergic to using pure #ffffff and #000000 for anything), some cotton fat quarters, and my big box of beads, fabric scraps, ribbons, and whatever else I can feasibly sew onto an embroidery hoop.</p>
+
+            <p>I'm really happy I got to make the hoop for our title card. I feel the most in my element making fabric collages like that, and had been itching to make one anyways. It was fun combining organized cross-stitching <i>and</i> messy surface stitching, and I felt the two needleworks balance each other out.</p>
+
+            <p><a href="/text/images/tnb9.jpg"><img src="/text/images/tnb9.jpg" alt="tnb9" loading="lazy" class="img-orient"></a></p>
+            <i>Detail on the title card hoop. Note the knots, buttons, and multiple styles of needlework.</i>
+
+            <p>All of the UI buttons were cross-stitched onto scrap aida cloth, with handwritten mulberry labels layered on top. I made buttons that fully spelled out their functions in ICS flags that were intended for the loading screen, but ultimately those got scrapped and instead are only seen in the big ephemera layouts.</p>
+
+            <p><a href="/text/images/tnb10.jpg"><img src="/text/images/tnb10.jpg" alt="tnb10" loading="lazy" class="img-orient"></a></p>
+            <i>The two components were merged in post.</i>
+
+            <p><a href="/text/images/tnb11.jpg"><img src="/text/images/tnb11.jpg" alt="tnb11" loading="lazy" class="img-orient"></a></p>
+            <i>Scrapped buttons. RIP.</i>
+
+            <p>The dialogue box and NVL mode box are similar, just featuring fewer flags and a lot more Morse code. Both boxes have very subtle Morse around the edges: something along the lines of TOXICYURIVNJAM 2025 KAZEHAIPPILOTCO TENMETRETIDE. It's not meant to be read, and it's just something I do in all embroidered artwork I make. The idea that there's an illegible watermark in every single scene is just kind of funny, too.</p>
+
+            <p><a href="/text/images/tnb12.jpg"><img src="/text/images/tnb12.jpg" alt="tnb12" loading="lazy" class="img-orient"></a></p>
+            <i>TEN METRE TIDE TYVNJ: Hiding in plain sight!</i>
+
+            <h3>Re-digitization</h3>
+
+            <p>With the images collaged, embroidered, stickered, decorated, and illustrated, and with the GUI embroidered, it was time to re-digitize. The initial plan was to scan everything back in with a flatbed. This would ensure even illumination and maintain flatness, which is necessary for edge-to-edge sharpness. However, the backgrounds were thick with glue, tape, embroidery thread, and plastic gemstones. The embroidery probably needed to stay on hoops, and it included beads and tall knots. Putting all that stuff on the scanner glass wasn't an option, so we changed course and digitized on the copy stand instead.</p>
+
+            <p><a href="/text/images/tnb13.jpg"><img src="/text/images/tnb13.jpg" alt="tnb13" loading="lazy" class="img-orient"></a></p>
+            <i>The final copy stand setup.</i>
+
+            <p>A copy stand is nothing more than a flat platform where a document or item can sit evenly illuminated, while an attached arm holds a camera above and parallel. Simple in many ways, but the simplicity invites complication. Maintaining even illumination becomes a problem as you use external lights, and same with color temperature across the scene. Light pollution from the home, from LED status indicators, and from variation between key lights becomes a thorn in the side. Even though I was using high-CRI video lights, the white balance shifts noticeably from edge to edge on many of our images.</p>
+
+            <p>Flatness is another issue. On a flatbed scanner, a lid would press the whole thing flat against the scanner glass. But with the images free to hold their natural shapes, edges would lift or parts of the page would be warped due to drying glue, moisture in the air, or wrinkles in the paper.</p>
+
+            <p>Without flatness, there's a loss in sharpness. Depth of field becomes razor thin when shooting subjects close to the camera's image-forming plane. When one side of the sheet is closer to the camera than the other, one side will be sharper and the other will be softer: there's only so much that can be solved by increasing the aperture or sharpening in post. Focus stacking is a remedy, but a time-intensive one that I didn't want to deal with on a game jam deadline.</p>
+
+            <p>With all those caveats understood, the final decision was lighting. As mentioned above, I opted to shoot at night with video lights rather than use natural light. Standard procedure for lighting 2D items (documents or photographs, generally) on a copy stand is to use at least two light sources set at ~45 degrees to the subject. This reduces hotspots and minimizes the opportunity for the item to cast shadows on itself. So, I tried that first.</p>        
+
+            <p><a href="/text/images/tnb14.jpg"><img src="/text/images/tnb14.jpg" alt="tnb14" loading="lazy" class="img-orient"></a></p>
+            <i>Lighting diagram for a standard 2D art reproduction rig.</i>
+
+            <p>An issue quickly came to the fore: the backgrounds, and especially the embroidery, are more 3D than 2D. In retrospect, this should have been obvious, but I didn't really understand until I was looking at the images, wondering <i>“Why does this look so dull?”</i> The aida cloth lost its texture, the layers of collage collapsed into a single plane. Boring. So, I took a cue from the portrait world. Rather than working my lights evenly, I'd use one light for fill, still set at ~45 degrees, and the other as a key light, set oblique to the subject.</p>
+
+            <p>This is the approach I took for the remainder of the project. The new lighting setup gave toothfulness to the aida cloth, emphasized depth in the threads and knots, and cast subtle, beautiful shadows between collaged layers, stickers, and base image of the backgrounds.</p>
+
+            <p><a href="/text/images/tnb15.jpg"><img src="/text/images/tnb15.jpg" alt="tnb15" loading="lazy" class="img-orient"></a></p>
+            <i>Detail on a background. You can see the shadow between the layers as well the paper warping on the left side.</i>
+
+            <p>With the backgrounds re-digitized, the final step was another edit. I had moved forward despite a number of issues that bothered me a lot: the banding, the color shift, the loss in sharpness… and in the end, those artifacts of the digital-analog-digital process gave the pictures a unique character that I wouldn't ever trade away. </p>
+
+            <blockquote><p><i>“Whatever you now find weird, ugly, uncomfortable and nasty about a new medium will surely become its signature. CD distortion, the jitteriness of digital video, the crap sound of 8-bit - all of these will be cherished and emulated as soon as they can be avoided. It's the sound of failure… the sound of things going out of control, of a medium pushing to its limits and breaking apart.”</i> - Brian Eno</p></blockquote>
+
+            <p>For legibility's sake, I put a 25% opacity layer over all the backgrounds: a necessary evil. They also had to be resized to 1920px on the long edge. We're working on a zine including the images in their full-resolution, full-color, vibrant glory. Pilot did something wonderful with my images and I am so pleased with how they all turned out, so I am hoping everyone can see these backgrounds the way we did before we put them in the game.</p>
+
+            <p><a href="/text/images/tnb16.jpg"><img src="/text/images/tnb16.jpg" alt="tnb16" loading="lazy" class="img-orient"></a></p>
+            <i>Lifecycle of a 10MT background. Step 1. The raw image, unprocessed from the camera.</i>
+
+            <p><a href="/text/images/tnb17.jpg"><img src="/text/images/tnb17.jpg" alt="tnb17" loading="lazy" class="img-orient"></a></p>
+            <i>Step 2.  First edit in Lightroom. Note the flipped composition.</i>
+
+            <p><a href="/text/images/tnb18.jpg"><img src="/text/images/tnb18.jpg" alt="tnb18" loading="lazy" class="img-orient"></a></p>
+            <i>Step 3. The image has been printed, decorated, and scanned back in. It is a raw image again.</i>
+
+            <p><a href="/text/images/tnb19.jpg"><img src="/text/images/tnb19.jpg" alt="tnb19" loading="lazy" class="img-orient"></a></p>
+            <i>Step 4. The final image after another edit in Lightroom. Note the color temperature shifting from cool at the edges to warm in the center. This is due to light pollution or a mismatch in CRI between my two light sources.</i>
+
+            <h3>Music</h3>
+
+            <p>From the beginning, I wanted this game's music to have a sparse, darkly nostalgic atmosphere. A secondary personal goal was to program the soundtrack entirely on hardware -- as someone who considers themself a performer-musician rather than a composer, it's so much easier for me to sketch ideas out on an instrument or physical sequencer… but life got in the way. I had to do some last-minute travel and couldn't bring my gear. By the time I got home, we were running up against the deadline and I had to work entirely in Ableton in the interest of time.</p>
+
+            <p><a href="/text/images/tnb20.jpg"><img src="/text/images/tnb20.jpg" alt="tnb20" loading="lazy" class="img-orient"></a></p>
+            <i>Pictured: me about to play with my toys.</i>
+
+            <p>But I'm happy with my performance against the first goal! I took inspiration from Boards of Canada for the atmosphere, and especially <i>Yume Nikki</i> for the structure. I worked with short loops, doing some basic modulation over a few repetitions to keep things from getting too stale. Post-release, I wish I had done a little more to keep the loops fresh. Almost all sounds were programmed on two synths: Arturia's Pigments and the Elektron Digitone. </p>
+
+            <p>Pilot handled the sound effects, pulling from VN-dev classic sources Taira Komori and FilmCow as well as the U.S. National Parks Service. It was nice to have something <i>off</i> our plates for this project (notwithstanding Pilot's hard work in curation and implementation!), but next time I think it might be fun to do some field recording and foley of our own. </p>
+
+            <h3>Conclusion</h3>
+
+            <p>We made what we know how to make. But working together was new, making visual novels was new, and using Ren'Py was new. With all of that newness, I'm glad that we worked within the boundaries of our own creative practices. This freed up a lot of mental bandwidth to deal with life's random hurdles, work through frustrations at the game engine, and learn to work as a team. </p>
+
+            <p>...To be honest, our next project together will likely divide along the same responsibilities and play to our same strengths. We both love physical media; I'm not that interested in learning to draw backgrounds; Pilot doesn't want to tool around in Ableton. But we learned a lot about the other stuff – the tangibles and the intangibles -- that'll make our next project go smoother and let us focus on bringing another story to life.</p>
+
+            <p>Until next time.</p>
+
+        </div>
+
+    <p>---</p>
+    <p><a href="/text.html">Back to /text/.</a></p>
+    <p><a href="/index.html">Back to /home/.</a></p>
+    
+    </div>
+
+</div>
+
+</body>
+
+</html>
