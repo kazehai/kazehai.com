@@ -40,7 +40,9 @@ var sites = [
 'https://www.lexie.land',
 'https://kirinkoumori.neocities.org/',
 'https://hund666.neocities.org/',
-'https://telltaletypist.neocities.org/'
+'https://telltaletypist.neocities.org/',
+//'https://ruemilley.neocities.org/',
+'https://cowboy-starshine.neocities.org/'
 ];
 
 //page containing widget for the random and directional buttons
@@ -78,7 +80,9 @@ var webringlocs = [
 'https://www.lexie.land/dist/index.html',
 'https://kirinkoumori.neocities.org/project_pages/ph',
 'https://hund666.neocities.org/',
-'https://telltaletypist.neocities.org/'
+'https://telltaletypist.neocities.org/',
+//'https://ruemilley.neocities.org/',
+'https://cowboy-starshine.neocities.org/'
 ]
 
 //the name of the ring
