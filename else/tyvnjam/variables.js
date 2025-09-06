@@ -42,7 +42,8 @@ var sites = [
 'https://hund666.neocities.org/',
 'https://telltaletypist.neocities.org/',
 //'https://ruemilley.neocities.org/',
-'https://cowboy-starshine.neocities.org/'
+'https://cowboy-starshine.neocities.org/',
+'https://ophanimkei.com/neighborhood'
 ];
 
 //page containing widget for the random and directional buttons
@@ -82,7 +83,8 @@ var webringlocs = [
 'https://hund666.neocities.org/',
 'https://telltaletypist.neocities.org/',
 //'https://ruemilley.neocities.org/',
-'https://cowboy-starshine.neocities.org/'
+'https://cowboy-starshine.neocities.org/',
+'https://ophanimkei.com/neighborhood'
 ]
 
 //the name of the ring
