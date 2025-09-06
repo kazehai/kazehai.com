@@ -43,7 +43,7 @@ var sites = [
 'https://telltaletypist.neocities.org/',
 //'https://ruemilley.neocities.org/',
 'https://cowboy-starshine.neocities.org/',
-'https://ophanimkei.com/neighborhood'
+'https://ophanimkei.com/'
 ];
 
 //page containing widget for the random and directional buttons
