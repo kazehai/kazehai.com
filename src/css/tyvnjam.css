@@ -1,0 +1,32 @@
+#tyvnjam {
+  margin: 0 auto;
+  width:fit-content;
+  max-width: 100%;
+  outline: 0.1em solid;
+  border-radius: 0.5em;
+}
+
+#tyvnjam table {
+  background-color: #ffffff35; /* makes the background transparent */
+  margin: 0 auto; /* centers the widget */
+}
+
+#tyvnjam table tr td {
+  padding: 15px; /* creates some space between the links and text inside the widget */
+}
+
+#tyvnjam .webring-prev {
+  text-align:right;
+}
+
+#tyvnjam .webring-info {
+   text-align:center;
+}
+
+#tyvnjam .webring-next {
+  text-align:left;
+}
+
+#tyvnjam .webring-links {
+  font-size:small;
+}

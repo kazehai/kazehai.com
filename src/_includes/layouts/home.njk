@@ -1,0 +1,26 @@
+<div class="side">
+
+    <div class="header">
+      <picture>
+        <source srcset="/images/header.gif" media="(prefers-color-scheme: light)"/>
+        <source srcset="/images/header-dark.gif" media="(prefers-color-scheme: dark)"/>
+        <img src="/images/header.gif">
+      </picture>
+    </div>
+
+    <div class="navbar">
+
+      <a href="/index.html">home</a>
+      <a href="/photo.html">photo</a>
+      <a href="/text.html">text</a>
+      <a href="/works.html">works</a>
+      <a href="/else.html">else</a>
+
+    </div>
+
+</div>
+<div class="main">
+    <main> 
+        {{content | safe}}
+    </main>
+</div>

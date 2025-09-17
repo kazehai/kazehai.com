@@ -1,0 +1,129 @@
+/* Sidebar/left column */
+.subpageside {
+  height: fit-content;
+  max-width: 25%;
+  border: 0.1rem solid black; 
+  background-color: #f6f6f6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.25;
+}
+
+/* Make text page bodies narrower */
+.text {   
+    max-width: 40%;
+}
+
+/* Indent paragraphs for long text posts like blogs */
+.longtext p {
+    text-indent: 2rem;   
+}
+
+/* Center photos on blog posts */
+.img-orient {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+    image-rendering: smooth;
+}
+
+/* Indent diary entires inside <details> tags */
+.diary {   
+    margin-left: 2rem;
+}
+
+/* Make photo page bodies wider */
+.photos {
+    max-width: 65%;
+}
+
+/* Photomontage behavior */
+.montage { 
+    padding-top: 1rem;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem; 
+}
+
+/* Photomontage image size and attributes */
+.montage img {
+    width: 40%;
+    image-rendering: smooth;
+    flex: auto;
+    object-fit: contain;
+}
+
+/* Photomontage link behavior */
+.montage a {
+  display:contents;
+}
+
+/* Responsive layout for screens under 1000px */
+@media screen and (max-width: 1000px) {
+
+  /* Make the two sections stack on top of each other */
+  .pagerows {   
+    flex-direction: column;
+    align-items: left;
+  }
+
+  /* Stretch the sidebar across the full screen */
+  .subpageside { 
+    min-width: 100%;
+    
+  }
+
+  /* Stretch the text bar across the full screen and use even padding */
+  .text {  
+    min-width: 100%; 
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  /* Don't indent diary entries on small screens */
+  .diary {   
+    margin-left: 0;
+  }
+
+  /* Stretch the photos bar across the full screen and use even padding */
+  .photos {  
+    min-width: 100%; 
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  /* Stretch blog images to the full screen width */
+  .img-orient {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  /* Change photomontage to column layout */
+  .montage { 
+    flex-direction: column;
+  }
+
+  /* Make photomontage photos stretch across full screen */
+    .montage img {
+    width: 100%;
+  }
+
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+ 
+  /* Change sidebar background color and sidebar border color */
+  .subpageside {
+    border: 0.1rem solid #cfcfcf; 
+    background-color: #ffffff10;
+    color: #eeeeee;
+  }
+  
+}
