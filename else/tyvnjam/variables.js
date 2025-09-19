@@ -41,9 +41,10 @@ var sites = [
 'https://kirinkoumori.neocities.org/',
 'https://hund666.neocities.org/',
 'https://telltaletypist.neocities.org/',
-//'https://ruemilley.neocities.org/',
+'https://ruemilley.neocities.org/',
 'https://cowboy-starshine.neocities.org/',
 'https://ophanimkei.com/'
+'https://a-reliquary-for-dolls.neocities.org'
 ];
 
 //page containing widget for the random and directional buttons
@@ -82,9 +83,10 @@ var webringlocs = [
 'https://kirinkoumori.neocities.org/project_pages/ph',
 'https://hund666.neocities.org/',
 'https://telltaletypist.neocities.org/',
-//'https://ruemilley.neocities.org/',
+'https://ruemilley.neocities.org/',
 'https://cowboy-starshine.neocities.org/',
-'https://ophanimkei.com/neighborhood'
+'https://ophanimkei.com/neighborhood',
+'https://a-reliquary-for-dolls.neocities.org/Games'
 ]
 
 //the name of the ring
