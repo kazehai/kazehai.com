@@ -43,7 +43,7 @@ var sites = [
 'https://telltaletypist.neocities.org/',
 'https://ruemilley.neocities.org/',
 'https://cowboy-starshine.neocities.org/',
-'https://ophanimkei.com/'
+'https://ophanimkei.com/',
 'https://a-reliquary-for-dolls.neocities.org'
 ];
 
